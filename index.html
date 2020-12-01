@@ -1,91 +1,53 @@
-<!DOCTYPE HTML>
-<!--Curso de HTML desde cero-->
+<!DOCTYPE html>
+<!--Con la linea anterior especificamos que vamos a utilizar estandar HTML5-->
+<!--Curso de HTML desde cero, siguiendo el curso de youtube del canal pildorasinformaticas-->
 <html>
     <head>
         <!--Titulo de la pagina-->
-        <title>Curso HTML: Pagina6</title>
+        <!--Aqui incluimos tambien llamados a archivos internos y externos-->
+        <!--hojas de estilo CSS y Javascript-->
+        <!--etiquetas meta, especificar metadatos-->
+        <title>Curso HTML: Usando JS</title>
+        <meta charset="iso-8559-1"/>
+        <meta name="description" content="Pagina del aprendizaje de HTML5"/>
+        <meta name="keywords" content="html5, css3, Javascript, diseño web"/>
+        <link rel="stylesheet" href="estilos.css" />
+        <script src="JS1.js"></script>
+       
     </head>
     <body>
-        <h1>Listas</h1>
-        <h2>Lista sin ordenar utilizando ul</h2>
-        <ul>
-            <li>Primavera</li>
-            <li>Verano</li>
-            <li>Otoño</li>
-            <li>Invierno</li>
-        </ul>
-        <h2>Lista ordenada utilizando ol</h2>
-        <ol>
-            <li>Lunes</li>
-            <li>Martes</li>
-            <li>Miercloes</li>
-            <li>Jueves</li>
-            <li>Viernes</li>
-            <li>Sabado</li>
-            <li>Domingo</li>
-        </ol>
-        <h2>Listas con sublistas anidadas</h2>
-        <ul>
-            <li>América</li>
-                <ol>
-                    <li>América central</li>
-                    <li>América sur</li>
-                    <li>América norte</li>
-                </ol>
-            <li>África</li>
-                <ol>
-                    <li>África Septentrional</li>
-                    <li>África Occidental</li>
-                    <li>África Central</li>
-                    <li>África Oriental</li>
-                    <li>África Meridional</li>
-                </ol>
-            <li>Antártida</li>
-                <ul>
-                    <li>Antártida oriental</li>
-                    <li>Antártida occidental</li>
-                </ul>
-            <li>Asia</li>
-            <li>Europa</li>
-            <li>Oceania</li>
-          </ul>
-        <h2>Lista de definiciones utilizando dl, dt, dd</h2>
-            <dl>
-                <dt>Mamifero</dt><dd> Especie de animales que maman</dd>
-                <dt>Vertebrado</dt><dd> Especie de animales que poseen huesos</dd>
-                <dt>Reptil</dt><dd>Especie de animales que se arrastran por el suelo</dd>
-            </dl>
-        <h2>Listas modificando el estilo de las viñetas</h2>
-        <ul style= "list-style-type: circle">
-            <li>Primer lista </li>
-            <li>Primer lista </li>
-            <li>Primer lista </li>
-        </ul>
-          
-        <ul style= "list-style-type: square">
-            <li>SEGUNDA LISTA </li>
-            <li>SEGUNDA LISTA </li>
-            <li>SEGUNDA LISTA </li>
-        </ul>
-        <ul style= "list-style-type: upper-roman">
-            <li>Tercera lista </li>
-            <li>Tercera lista </li>
-            <li>Tercera lista </li>
-        </ul>
-        <ul style= "list-style-type: lower-greek">
-            <li>Cuarta LISTA </li>
-            <li>Cuarta LISTA </li>
-            <li>Cuarta LISTA </li>
-        </ul>
-        <h2>Listas modificando el estilo de las viñetas con una imagen</h2>        
-        <ul style="list-style-image:url(https://cdn.pixabay.com/photo/2012/04/10/22/57/heart-26790__340.png);
-        height:15px; width:15px;">
-            <li> Primer elemento</li>
-            <li> Segundo elemento</li>
-            <li> Tercer elemento</li>
-            <li> Cuarto elemento</li>
-            <li> Quinto elemento</li>
-            <li> Sexto elemento</li>
-        </ul>
+        <h1>Uso de Formularios y API</h1>
+        <section>
+            <form name="registro" method="GET">
+                <datalist id="informacion">
+                    <option value="24324423" label="   Telefono Directo"></option>
+                    <option value="24777423" label="   Telefono Alterno"></option>
+                    <option value="24324548" label="   Telefono Seguridad"></option>
+                </datalist>
+                Telefono: &nbsp; <input type="tel" name="telefono" id="telefono" list="informacion">
+            </form>    
+            <h2>Formulario en Tabla</h2>
+            <form name="registro_usr" method="GET">
+               <table>
+                   <tr>
+                       <td>Nombre</td>
+                       <td><input type="text" name="nombre" id="nombre"></td>
+                   </tr>
+                   <tr>
+                        <td>Apellido</td>
+                        <td><input type="text" name="apellido" id="apellido"></td>
+                   </tr>
+                   <tr>
+                        <td>Edad</td>
+                        <td><input type="number" name="edad" id="edad" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="enviar" value="Registrar"></td>
+                    </tr>
+               </table>
+            </form>
+        </section>
+        
     </body>
 </html>
+
