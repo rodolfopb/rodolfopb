@@ -1,47 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Manejo de Archivos TXT con PHP</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="navbar-brand">Manejo de Archivos con PHP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Manejo de Archivos</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="createUser.html">Crear Usuario</a>
-              <a class="dropdown-item" href="findUser.html">Buscar Usuario</a>
-            </div>
-          </li>       
+<!DOCTYPE HTML>
+<!--Curso de HTML desde cero-->
+<html>
+    <head>
+        <!--Titulo de la pagina-->
+        <title>Curso HTML: Pagina6</title>
+    </head>
+    <body>
+        <h1>Listas</h1>
+        <h2>Lista sin ordenar utilizando ul</h2>
+        <ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
         </ul>
-      </div> 
-    </nav>
-    <div class="container">
-      <h3>
-        Aplicativo de Gestion de Usuarios
-        <p>Este aplicativo se utiliza para gestionar y visualizar usuarios.</p>
-        <img src="imagenes/users-870x342.jpg" class="img-rounded" alt="Computador" width="400">
-      </h3> 
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  </body>
+        <h2>Lista ordenada utilizando ol</h2>
+        <ol>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercloes</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sabado</li>
+            <li>Domingo</li>
+        </ol>
+        <h2>Listas con sublistas anidadas</h2>
+        <ul>
+            <li>América</li>
+                <ol>
+                    <li>América central</li>
+                    <li>América sur</li>
+                    <li>América norte</li>
+                </ol>
+            <li>África</li>
+                <ol>
+                    <li>África Septentrional</li>
+                    <li>África Occidental</li>
+                    <li>África Central</li>
+                    <li>África Oriental</li>
+                    <li>África Meridional</li>
+                </ol>
+            <li>Antártida</li>
+                <ul>
+                    <li>Antártida oriental</li>
+                    <li>Antártida occidental</li>
+                </ul>
+            <li>Asia</li>
+            <li>Europa</li>
+            <li>Oceania</li>
+          </ul>
+        <h2>Lista de definiciones utilizando dl, dt, dd</h2>
+            <dl>
+                <dt>Mamifero</dt><dd> Especie de animales que maman</dd>
+                <dt>Vertebrado</dt><dd> Especie de animales que poseen huesos</dd>
+                <dt>Reptil</dt><dd>Especie de animales que se arrastran por el suelo</dd>
+            </dl>
+        <h2>Listas modificando el estilo de las viñetas</h2>
+        <ul style= "list-style-type: circle">
+            <li>Primer lista </li>
+            <li>Primer lista </li>
+            <li>Primer lista </li>
+        </ul>
+          
+        <ul style= "list-style-type: square">
+            <li>SEGUNDA LISTA </li>
+            <li>SEGUNDA LISTA </li>
+            <li>SEGUNDA LISTA </li>
+        </ul>
+        <ul style= "list-style-type: upper-roman">
+            <li>Tercera lista </li>
+            <li>Tercera lista </li>
+            <li>Tercera lista </li>
+        </ul>
+        <ul style= "list-style-type: lower-greek">
+            <li>Cuarta LISTA </li>
+            <li>Cuarta LISTA </li>
+            <li>Cuarta LISTA </li>
+        </ul>
+        <h2>Listas modificando el estilo de las viñetas con una imagen</h2>        
+        <ul style="list-style-image:url(https://cdn.pixabay.com/photo/2012/04/10/22/57/heart-26790__340.png);
+        height:15px; width:15px;">
+            <li> Primer elemento</li>
+            <li> Segundo elemento</li>
+            <li> Tercer elemento</li>
+            <li> Cuarto elemento</li>
+            <li> Quinto elemento</li>
+            <li> Sexto elemento</li>
+        </ul>
+    </body>
 </html>
-
