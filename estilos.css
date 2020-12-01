@@ -1,0 +1,11 @@
+table{
+	text-align: center;
+	background-color: khaki;
+	width: 25%;
+	margin: auto;
+	border: 2px burlywood dotted;
+}
+td{
+	padding: 15px;
+	
+}
